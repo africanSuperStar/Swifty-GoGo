@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: disqus
 title: Panda Series Part 1
 date: 2019-09-14 23:11 +0200
+comments: true
 ---
 
 ### Series is ndarray-like

@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: disqus
 title: Python Import System
 date: 2019-09-15 06:55 +0200
 author: Cameron de Bruyn
 categories: import python
+comments: true
 ---
 
 #### Packages

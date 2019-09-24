@@ -136,3 +136,4 @@ build/Release
 
 # dotenv environment variables file
 .env
+_config.api.yml

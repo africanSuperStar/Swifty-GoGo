@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: disqus
 title: Multiple Word Count Sample
 date: 2019-09-15 22:14 +0200
+comments: true
 ---
 
 <style>

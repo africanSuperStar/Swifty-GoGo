@@ -2,7 +2,7 @@
   "name": "swifty-gogo",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch --mode development | bundle exec jekyll serve --livereload --incremental",
+    "start": "webpack --watch --config webpack.config.js | bundle exec jekyll serve --livereload --incremental",
     "build": "webpack --build --mode production | bundle exec jekyll build",
     "prod": "webpack --mode production | JEKYLL_ENV=production jekyll build",
     "webpack": "webpack --watch",

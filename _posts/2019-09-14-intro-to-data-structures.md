@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: disqus
 title: Pandas - Intro to Data Structures
 author: Cameron de Bruyn
 date: 2019-09-14 22:43 +0200
 categories: data structures intro
+comments: true
 ---
 
 # Intro to Data Structures

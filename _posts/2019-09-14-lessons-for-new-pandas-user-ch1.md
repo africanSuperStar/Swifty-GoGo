@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: disqus
 title: Lessons for new Pandas User's Chapter 1
 author: Cameron de Bruyn
+comments: true
 ---
 
 The lesson for this post can be found in [this][1] Jupyter notebook.
