@@ -37,7 +37,7 @@ Previously programmers were adept at using `Enumerable` operations which meant t
 
 User expect things to happen immediately. On average if a button tap  or mouse click takes longer than 3 seconds to respond. Users get bored and move on to another page. This is not good for business. Responses to events need to happen in near real time for experiences to be engaging. This is true for nearly all domains. Online gaming, push notifications, video streaming, online banking.
 
-![Reactive Description](assets/images/RxSwift-1/RxSwift-1.001.png)
+![Reactive Description](assets/images/RxSwift-1-dark/RxSwift-1-dark.001.png)
 
 Apple does a great of job of managing multiple processes within an application on multiple thread within different cores on the CPU.
 
