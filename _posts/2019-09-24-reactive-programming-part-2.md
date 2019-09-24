@@ -63,7 +63,6 @@ There are 4 methods I will concentrate on creating `Observables`.
 1. .just()
 1. .of()
 1. .from()
-1. .deferred()
 
 ### Just Observable Creation
 
