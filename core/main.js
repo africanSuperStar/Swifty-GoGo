@@ -4,6 +4,8 @@ import {
     config
 } from "./config";
 
+hljs.initHighlightingOnLoad();
+
 var firebaseConfig = {
     apiKey: config.apiKey,
     authDomain: "swifty-gogo.firebaseapp.com",

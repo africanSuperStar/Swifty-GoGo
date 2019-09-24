@@ -1,47 +1,129 @@
-h3 {
-    color: darkcyan;
+body {
+  background-color: rgb(37, 37, 37);
+}
+
+p {
+  color: whitesmoke;
+}
+
+h1, h2 {
+  color: darkorange;
+}
+
+h3, h4, h5, h6 {
+  color: darkcyan;
+}
+
+a {
+  color: darkcyan;
+}
+
+em {
+  color: whitesmoke;
+}
+
+li {
+  color: whitesmoke;
+}
+
+table td {
+  border: 2px solid darkorange;
+}
+
+td {
+  color: darkgray;
+}
+
+.site-nav .page-link {
+  color: whitesmoke;
+}
+
+.highlighter-rouge .highlight {
+  background-color: #363636;
+}
+
+a.site-title {
+  color: whitesmoke;
 }
 
 a.post-link {
-    color: darkorange;
+  color: darkorange;
+}
+
+a.u-email {
+  color: darkorange;
+}
+
+span {
+  color: white;
+}
+
+pre, code {
+  background-color: #4d72ff;
 }
 
 .ais-search-box {
-    max-width: 100%;
-    margin-bottom: 15px;
-  }
+  max-width: 100%;
+  margin-bottom: 15px;
+}
 
-  .post-item {
-    margin-bottom: 30px;
-  }
+.post-item {
+  margin-bottom: 30px;
+}
 
-  .post-link .ais-Highlight {
-    color: #111;
-    font-style: normal;
-    text-decoration: underline;
-  }
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+}
 
-  .post-breadcrumbs {
-    color: #424242;
-    display: block;
-  }
+.post-breadcrumbs {
+  color: #424242;
+  display: block;
+}
 
-  .post-breadcrumb {
-    font-size: 18px;
-    color: #424242;
-  }
+.post-breadcrumb {
+  font-size: 18px;
+  color: #424242;
+}
 
-  .post-breadcrumb .ais-Highlight {
-    font-weight: bold;
-    font-style: normal;
-  }
+.post-breadcrumb .ais-Highlight {
+  font-weight: bold;
+  font-style: normal;
+}
 
-  .post-snippet .ais-Highlight {
-    color: #2a7ae2;
-    font-style: normal;
-    font-weight: bold;
-  }
+.post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+}
 
-  .post-snippet img {
-    display: none;
-  }
+.post-snippet img {
+  display: none;
+}
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+a.ais-search-box--powered-by-link {
+  color: whitesmoke;
+}
+
+a:visited {
+  color: whitesmoke;
+}

@@ -30,7 +30,7 @@ plugins:
 
 algolia:
   application_id: WN77FNKN51
-  index_name: dev_ITSI
+  index_name: swiftyGOGO
   search_only_api_key: c8f93a81487398638ac732eb13e73e2e
 
 # Exclude from processing.

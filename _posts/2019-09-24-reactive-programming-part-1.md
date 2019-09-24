@@ -105,12 +105,6 @@ public enum Event<Element> {
 }
 ```
 
-This is the code for an event. An event can have 3 different callback modes. An `onNext` mode, `onError` or `onCompleted` mode. This is the foundation upon which Rx is built on. Thinking of this makes sense. Users can only fire events in sequence. Events can continue firing. Or they can complete. Or have and an error in which case the signal will end as well.
+This is the code for an event. An event can have 3 different callback modes. An `onNext` mode, `onError` or `onCompleted` mode. This is the foundation upon which Rx is built on. Thinking of this makes sense. Users can only fire events in sequence. Events can continue firing. Or they can complete. Or have an error in which case the signal will end as well.
 
 The next section will continue the discussion on `Observable`.
-
-See the next article
-
-Constructive feedback is welcome. If you notice something wrong with the article. Please send me message so that I can rectify it.
-
-#### Happy Coding! 😀
