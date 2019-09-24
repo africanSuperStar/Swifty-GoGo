@@ -29,16 +29,18 @@
       }).join(' > ')
     }
 
-    const content = hit._highlightResult.html.value;
-
-    return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
-      <div class="post-snippet">${content}</div>
-    </div>
-  `;
+    if (hit._highlightResult.html != null) {
+      const content = hit._highlightResult.html.value;
+  
+      return `
+      <div class="post-item">
+        <span class="post-meta">${date}</span>
+        <h2><a class="post-link" href="${url}">${title}</a></h2>
+        {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
+        <div class="post-snippet">${content}</div>
+      </div>
+    `;
+    }
   }
 
 
