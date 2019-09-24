@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Mansalva";
+  src: url("/assets/fonts/Mansalva/Mansalva-Regular.ttf");
+}
+
 body {
   background-color: rgb(37, 37, 37);
 }
@@ -16,6 +21,10 @@ h3, h4, h5, h6 {
 
 a {
   color: darkcyan;
+}
+
+a:visited {
+  color: whitesmoke;
 }
 
 em {
@@ -43,6 +52,9 @@ td {
 }
 
 a.site-title {
+  font-size: 80px;
+  padding: 5%;
+  font-family: Mansalva;
   color: whitesmoke;
 }
 
@@ -124,6 +136,13 @@ a.ais-search-box--powered-by-link {
   color: whitesmoke;
 }
 
-a:visited {
-  color: whitesmoke;
+.site-header {
+  background-color: #008b8b;
+  min-height: 100px;
+}
+
+.trigger {
+  .page-link {
+    color: #101010;
+  }
 }

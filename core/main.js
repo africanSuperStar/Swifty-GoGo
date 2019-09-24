@@ -1,5 +1,7 @@
 import * as firebase from "firebase/app";
 
+import "./swift";
+
 import {
     config
 } from "./config";
