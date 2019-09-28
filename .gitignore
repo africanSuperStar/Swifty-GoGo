@@ -3,6 +3,7 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+config.js
 
 node_modules
 
