@@ -3,6 +3,7 @@ layout: disqus
 title: Reactive Programming - Part 1
 date: 2019-09-24 10:50 +0200
 comments: true
+permalink: rxswift-part1
 ---
 
 So you might have heard the lingo before, `Events`, `Sinks`, `Schedulers`, `Streams`. These are just a few of the words used

@@ -3,6 +3,7 @@ layout: disqus
 title: Reactive Programming - Part 2
 date: 2019-09-24 17:48 +0200
 comments: true
+permalink: rxswift-part2
 ---
 
 __Observables__! What are they and why do they exist.. We also go deep into Observable creation with the `just`, `of`, `from` and `deferred` operators. 

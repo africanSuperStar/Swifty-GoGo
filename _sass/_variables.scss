@@ -51,11 +51,15 @@ td {
   background-color: #363636;
 }
 
-a.site-title {
+.site-title {
   font-size: 80px;
   padding: 5%;
   font-family: Mansalva;
   color: whitesmoke;
+
+  &:visited {
+    color: whitesmoke;
+  }
 }
 
 a.post-link {

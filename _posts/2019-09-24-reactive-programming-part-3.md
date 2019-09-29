@@ -3,17 +3,18 @@ layout: disqus
 title: Reactive Programming - Part 3
 date: 2019-09-24 18:49 +0200
 comments: true
+permalink: rxswift-part3
 ---
 
 In this post we will take a look at the creation of `Observables` by using the factory design pattern.
 
 Often you’ll want to create Observables and then get stuck, but realise that there is a bunch of setup code required to fulfill the needs of your specific objective. Sometimes all you want is a simple solution for creating Observables that when used at the call site, become easily maintainable.
 
-Or you go ahead and create an Observable but realise that you need another similar Observable with just a bit of tweaking. So you go ahead and create a very similar Observable. Or you are unsure of all the Observable type that you need before you create your solution.
+Or you go ahead and create an Observable but realise that you need another similar Observable with just a bit of tweaking. So you go ahead and create a very similar Observable. Or you are unsure of all the Observable types that you need before you create your solution.
 
 Let’s take a look at creating `Observables` with the factory design pattern by using extensions.
 
-Observable Creation with Defer
+#### Observable Creation with Defer
 
 _From reactivex.io_
 
@@ -44,3 +45,5 @@ let observable = Observable<Int>.deferred(value: 2)
 ```
 
 Obviously this is avery simple use case of a static factory method. But you could potentially add a bunch more setup code within your extension.
+
+
