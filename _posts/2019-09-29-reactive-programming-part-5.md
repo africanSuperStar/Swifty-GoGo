@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: disqus
 title: Reactive Programming - Part 5
 date: 2019-09-29 17:46 +0200
 comments: true
-permalink: rxswift-part5
+permalink: rxswift-part5/
 ---
 
-In this post we will go through `PublishSubject` and `PublishRelay` for __RxSwift 5.0.0__.
+In this post we will go through `PublishSubject` for __RxSwift 5.0.0__.
 
 The problem with a lot of the posts out there on the Interwebs about RxSwift is that information becomes outdated. As I suppose the information in this post will eventually be outdated as well, even though I will try my best to keep it up to date. This post will focus on the newest and greatest features by actually reviewing the source code of __RxSwift__ to ensure I can provide you with the best possible information.
 
@@ -110,3 +110,9 @@ You should get the following output:
 ```
 
 Run this from the sample code in the [Github Project](https://github.com/africanSuperStar/swgg-rxswift).
+
+Let's take a look at the marble diagram for the `PublishSubject`. Remember this horizontal lines are sequences over time. The down arrows are events and the up arrows are subscriptions.
+
+![PublishSubject](/assets/images/Subjects/PublishSubject.001.png)
+
+So from this diagram we can see that

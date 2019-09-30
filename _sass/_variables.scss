@@ -19,12 +19,16 @@ h3, h4, h5, h6 {
   color: darkcyan;
 }
 
+a.ais-search-box--powered-by-link {
+  color: whitesmoke;
+}
+
 a {
   color: darkcyan;
 }
 
 a:visited {
-  color: whitesmoke;
+  color: darkorange;
 }
 
 em {
@@ -136,10 +140,6 @@ pre, code {
   text-align: right;
 }
 
-a.ais-search-box--powered-by-link {
-  color: whitesmoke;
-}
-
 .site-header {
   background-color: #008b8b;
   min-height: 100px;
@@ -147,6 +147,6 @@ a.ais-search-box--powered-by-link {
 
 .trigger {
   .page-link {
-    color: #101010;
+    color: whitesmoke;
   }
 }

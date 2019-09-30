@@ -3,7 +3,7 @@ layout: disqus
 title: Reactive Programming - Part 1
 date: 2019-09-24 10:50 +0200
 comments: true
-permalink: rxswift-part1
+permalink: rxswift-part1/
 ---
 
 So you might have heard the lingo before, `Events`, `Sinks`, `Schedulers`, `Streams`. These are just a few of the words used
@@ -13,10 +13,10 @@ has a solid grasp of the Swift Language before continuing with this series of po
 
 Two of the best resources I recommend for beginners to start understanding the theory behind this coding style are the following resources
 
-* [Intro to Rx](http://introtorx.com/) by Lee Campbell
-* [Your Mouse is a Database](https://queue.acm.org/detail.cfm?id=2169076) by Erik Meijer
+* [Intro to Rx](http://introtorx.com/){:target="_blank"} by Lee Campbell
+* [Your Mouse is a Database](https://queue.acm.org/detail.cfm?id=2169076){:target="_blank"} by Erik Meijer
 
-The key take away from the [Getting Started](http://introtorx.com/Content/v1.0.10621.0/01_WhyRx.html) section is that reactive programming
+The key take away from the [Getting Started](http://introtorx.com/Content/v1.0.10621.0/01_WhyRx.html){:target="_blank"} section is that reactive programming
 consists of the following principles which make it so powerful.
 
 * Integrated
@@ -44,7 +44,7 @@ Apple does a great of job of managing multiple processes within an application o
 
 As you come to see that `Reactive Programming` is slightly functional in nature. Hence if you have ever done programming in OCaml, Haskell or Elixer. You will come to acknoledge the declarative and compositional nature of `RxSwift`. Which is why pieces of code such as closures are also asyncronous in nature.
 
-Before I continue. It is imperative that you read through the Apple docs on [@escaping closures](https://docs.swift.org/swift-book/LanguageGuide/Closures.html)
+Before I continue. It is imperative that you read through the Apple docs on [@escaping closures](https://docs.swift.org/swift-book/LanguageGuide/Closures.html){:target="_blank"}
 
 _From the Apple Docs..._
 
@@ -72,7 +72,7 @@ Some sequences are finite while others are infinite, like a sequence of button t
 ---tap-tap-------tap--->
 ```
 
-These are called marble diagrams. There are more marble diagrams at [rxmarbles.com](http://rxmarbles.com).
+These are called marble diagrams. There are more marble diagrams at [rxmarbles.com](http://rxmarbles.com){:target="_blank"}.
 
 If we were to specify sequence grammar as a regular expression it would look like:
 

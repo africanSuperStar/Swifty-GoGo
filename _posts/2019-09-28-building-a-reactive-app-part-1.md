@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: disqus
 title: Building a Reactive App - Part 1
 date: 2019-09-28 21:09 +0200
 comments: true
-permalink: practical-rxswift-part1
+permalink: practical-rxswift-part1/
 ---
 
 Asynchronous prgramming library.

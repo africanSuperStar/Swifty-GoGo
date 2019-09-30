@@ -3,7 +3,7 @@ layout: disqus
 title: Reactive Programming - Part 3
 date: 2019-09-24 18:49 +0200
 comments: true
-permalink: rxswift-part3
+permalink: rxswift-part3/
 ---
 
 In this post we will take a look at the creation of `Observables` by using the factory design pattern.

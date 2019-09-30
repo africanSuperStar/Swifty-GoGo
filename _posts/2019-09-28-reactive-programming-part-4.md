@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: disqus
 title: Reactive Programming - Part 4
 date: 2019-09-28 19:35 +0200
 comments: true
-permalink: rxswift-part4
+permalink: rxswift-part4/
 ---
 
 In this post I will continue the discussion on `Observables` by going through the list of `Observables Operators` from the source code. So please forgive me if I miss any.
