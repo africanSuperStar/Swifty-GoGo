@@ -3,7 +3,7 @@ layout: disqus
 title: Build a Dask Docker Environment
 date: 2019-09-30 21:13 +0200
 comments: true
-permalink: dask-docker-environment
+permalink: dask-docker-environment/
 ---
 
 In this post I will discuss the steps needed to install Docker and create a Dask / Jupyter environment.
