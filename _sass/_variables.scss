@@ -43,6 +43,20 @@ table td {
   border: 2px solid darkorange;
 }
 
+table tr:nth-child(odd) {
+  td {
+    color: white;
+  }
+}
+
+table tr:nth-child(even) {
+  background-color: #dc8544;
+
+  td {
+    color: black;
+  }
+}
+
 td {
   color: darkgray;
 }
