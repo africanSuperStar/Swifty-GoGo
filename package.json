@@ -32,6 +32,7 @@
     "font-awesome": "^4.7.0",
     "highlight.js": "^9.15.10",
     "jquery": "^3.4.1",
+    "mathjax": "^3.0.0",
     "requirejs": "^2.3.6"
   }
 }
