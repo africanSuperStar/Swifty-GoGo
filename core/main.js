@@ -1,6 +1,7 @@
 import * as firebase from "firebase/app";
 
 import "./swift";
+import "./simple-d3";
 
 import {
     config

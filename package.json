@@ -3,9 +3,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch --config webpack.config.js | bundle exec jekyll serve --livereload --incremental",
-    "build": "webpack --build --mode production | bundle exec jekyll build",
+    "build": "bundle exec jekyll build",
     "prod": "webpack --mode production | JEKYLL_ENV=production jekyll build",
-    "webpack": "webpack --watch",
+    "webpack": "webpack --build --production",
     "algolia": "ALGOLIA_API_KEY=$ALGOLIA_API_KEY bundle exec jekyll algolia"
   },
   "repository": {

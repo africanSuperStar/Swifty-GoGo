@@ -11,12 +11,24 @@ p {
   color: whitesmoke;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: darkorange;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   color: darkcyan;
+}
+
+blockquote:before {
+  content: ""
+}
+
+blockquote:after {
+  content: ""
 }
 
 a.ais-search-box--powered-by-link {
@@ -73,6 +85,16 @@ td {
   background-color: #363636;
 }
 
+.highlight {
+  .nn {
+    color: #4fef7a;
+  }
+
+  .nc {
+    color: #27ccff;
+  }
+}
+
 .site-title {
   font-size: 80px;
   padding: 5%;
@@ -96,7 +118,8 @@ span {
   color: white;
 }
 
-pre, code {
+pre,
+code {
   background-color: #4d72ff;
 }
 
