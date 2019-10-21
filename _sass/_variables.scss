@@ -23,6 +23,11 @@ h6 {
   color: darkcyan;
 }
 
+p,
+a {
+  font-weight: 300;
+}
+
 blockquote:before {
   content: ""
 }

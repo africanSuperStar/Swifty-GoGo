@@ -3,7 +3,7 @@ layout: disqus
 title: Food Recipe Convolutional Neural Network
 date: 2019-10-13 14:30 +0200
 comments: true
-permalink: food-recipe-convolutional-neural-network/
+permalink: food-recipe-cnn/
 ---
 
 > For the Kin Crypto Challenge I decided to try and build a Food Recipe Recognition CNN and embed that into a Flutter Application. I got pretty far and I aim to continue. This post will discuss the first part of building the CNN.
@@ -593,3 +593,80 @@ pyLDAvis.display(vis_data_hdp)
 You should now see something similar to the following:
 
 ![PLyDAVIS](assets/images/plydavis-graph.png)
+
+## Trial 3
+
+#### Non-negative matrix factorization
+
+```python
+n_topics = 300
+n_top_words = 20
+
+def print_top_words(model, feature_names, n_top_words):
+    for topic_idx, topic in enumerate(model.components_[:10]): # just show first 10 topics
+        print("Topic #%d:" % topic_idx)
+        print(" ".join([feature_names[i] for i in topic.argsort()[:-n_top_words - 1:-1]]))
+    print()
+
+data_samples = [' '.join(ti) for ti in final_names]
+print(len(data_samples))
+
+sorted(data_samples)[:20]
+```
+
+We then check the output:
+
+```
+['aargau carrot cake',
+ 'aarons chocolate chunk oatmeal cookies',
+ 'abbys super zucchini loaf',
+ 'abc chocolate chippers',
+ 'abernathy biscuits',
+ 'absolute stress',
+ 'absolutely best chocolate chip cookies',
+ 'absolutely delicious cake',
+ 'absolutely excellent oatmeal cookies',
+ 'absolutely fabulous portobello mushroom tortellini',
+ 'absolutely sinful chocolate chocolate chip cookies',
+ 'acapulco chicken',
+ 'acorn magic delights',
+ 'acorn squash',
+ 'addicting chip dip',
+ 'adeles summer special',
+ 'adobo sirloin',
+ 'adriennes tom ka gai',
+ 'adult punch',
+ 'adzimka bread']
+```
+
+```python
+%%time
+# tf-idf features for NMF.
+print("Extracting tf-idf features for NMF...")
+tfidf_vectorizer = TfidfVectorizer(max_df=0.99, max_features=None)
+tfidf = tfidf_vectorizer.fit_transform(data_samples)
+tfidf_feature_names = tfidf_vectorizer.get_feature_names()
+
+import operator
+def rank_terms(A, terms):
+    sums = A.sum(axis=0)
+    weights = {}
+    for col, term in enumerate(terms):
+        weights[term] = sums[0,col]
+    return sorted(weights.items(), key=operator.itemgetter(1), reverse=True)
+
+ranking = rank_terms(tfidf, tfidf_feature_names)
+for i, pair in enumerate(ranking[0:50]):
+    print( "%02d. %s (%.2f)" % (i+1, pair[0], pair[1]))
+```
+
+```
+print_top_words(nmf_250, tfidf_feature_names, 5)
+```
+
+
+
+tfidf_feature_names = tfidf_vectorizer.get_feature_names()
+print_top_words(nmf_300, tfidf_feature_names, 10) # just show first 10 topics
+
+recipes.Title[10:11]
