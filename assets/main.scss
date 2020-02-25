@@ -1,9 +1,10 @@
---- 
+---
 ---
 @import "{{ site.theme }}";
 
 @import "variables";
 @import "stepper";
+@import "embed";
 
 /*
 
@@ -113,16 +114,16 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
 }
 
 .highlight .kt {
-    font-weight: normal;
-    color: #00d632;
+  font-weight: normal;
+  color: #00d632;
 }
 
 .highlight .nf {
-    color: #ef3030;
-    font-weight: normal;
+  color: #ef3030;
+  font-weight: normal;
 }
 
-.fish-container{
+.fish-container {
   position: fixed;
   top: 50%;
   bottom: 0;
@@ -153,7 +154,7 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
   max-width: 600px;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: whitesmoke;
 
@@ -169,7 +170,7 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Add some padding inside the card container */

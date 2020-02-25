@@ -166,5 +166,3 @@ Remember I mentioned earlier with the `of` operator that passing in an array of 
 
 A sequence being a `Swift.Sequence`. Which is an `Element` that is able to iterate through it's elements.
 
-
-
