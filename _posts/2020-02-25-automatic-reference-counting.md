@@ -30,5 +30,48 @@ So for the most part Swift manages the memory for you in your application for _r
 
 ## How does ARC Work?
 
+![Automatic Reference Counting](/assets/images/ARC/ARC.001.png)
+
+Each time you create a reference type. ARC allocates a chunk of memory to that pointer to store information about that instance. This memory contains information about the type of the instance, together with any stored values. _Hence my mission to code without too many stored references_.
+
+So additionally once an instance is no longer needed the pointer is deallocated from the block of memory. __This is why we need to call the dispose method in RxSwift__.
+
+| 🚨But what happens if the _Class_ is deallocated while some of it's properties still have strong references.
+
+While it is most likely that your application will cause a runtime exception. 😱 Which is not a great thing. To make sure that instances don't disappear while they are still needed, ARC tracks how many properties, constants, and variables are currently referring to each class instance. 
+
+| 💡ARC will not deallocate the class instance until all of it's children properties are dealocated.
+
+So in order to keep track Swift will create a _strong reference_ to the class instance each time a constant, variable, function, closures is allocated. It is called a strong reference, because it won't deallocate itself until it's firm grip on the instance is released.
+
+
+# Why counting though?
+
+So looking at the following example:
+
+```swift
+class Truck {
+	let name: String
+
+	init(name: String) {
+		self.name = name
+	}
+}
+
+var ref1: Truck?
+let ref2: Truck?
+var ref3: Truck? // Currently assigned the value of nil
+
+ref1 = Truck(name: "Monster Truck")
+// One reference to Truck counted
+ref2 = Truck(name: "Mahindra")
+// Two references to Truck counted
+ref1 = nil
+// One reference to Truck counted
+ref2 = nil
+// All strong references are broken. Truck is now deallocated.
+```
+
+ARC does not deallocate the Truck instance until all strong references are broken.
 
 
